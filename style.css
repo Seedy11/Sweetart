@@ -1,0 +1,417 @@
+
+
+div{
+   --green: #088f8f;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'exo 2',sans-serif;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    
+}
+
+
+
+#header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 4rem;
+    z-index: 1000;
+
+   
+}
+
+.logo img{
+   height:5rem;
+}
+.fa-bars{
+    font-size: 4rem;
+    z-index: 10000;
+    color:#088f8f;
+    cursor: pointer;
+     display: none; 
+}
+
+#header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+#header li{
+    margin-right:4rem;
+
+}
+
+#header li a {
+    color:white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+#header li a:hover{
+    color:#088f8f;
+    text-decoration: none;
+}
+.header-active{
+    background:#333;
+    height: 6rem;
+    box-shadow: 2rem 0 .5rem #000;
+
+}
+
+.header-active ul{
+    margin: 0;
+}
+
+
+
+
+
+
+
+.fa-times{
+    transform: skew(-180deg) rotate(180deg);
+}
+
+@media (max-width:768px) {
+    .fa-bars{
+      display: block;
+    }
+
+    nav{
+        position: fixed;
+        top:0; left:-120%;
+        height:100vh;
+        width:35rem;
+        background-color: black;
+    }
+
+    ul{
+        flex-flow: column;
+        justify-content: center;
+        height: 100%;
+    }
+    li{
+        margin:2rem;
+    }
+    nav li a {
+        font-size: 3.5rem;
+        border-radius: 5rem;
+    }
+
+    #header li a:hover{
+        padding: .5rem 7.5rem;
+        color: #333;
+        background-color: #088f8f;
+    }
+    .nav-toggle{
+        left: 0%;
+    }
+}
+
+#home{
+    background: linear-gradient(0deg, rgba(0,0,0,.6),rgba(0,0,0,.6));
+    min-height: 100vh;
+}
+
+#home h1 {
+   font-size: 5rem;
+   font-family: 'lemonada','sans-serif';
+   font-weight: bolder;
+   text-shadow: .1rem .1rem .3rem #333;
+   color: #088f8f;
+}
+
+#home h2 {
+    font-size:  3.5rem;
+    font-family: 'lemonada',sans-serif;
+    font-weight: bolder;
+    text-shadow: .1rem .1rem .3rem #333;
+    color: #fff;
+    margin:1rem 0;
+}
+#home p {
+    font-size: 1.6rem;
+    color: #ccc;
+}
+
+
+#home button {
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    color:#333;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    height: 4rem;
+    width: 14rem;
+    background-color: #fff;
+}
+
+#home  button::before {
+    content: '';
+    position: absolute;
+    top:0; left:0;
+    background: #088f8f;
+    height: 100%;
+    width: 0%;
+    transition: relative;
+    z-index: -1;
+}
+
+#home button:hover::before{
+  width: 100%;
+}
+.image-container {
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.vid{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+    display: none;
+
+}
+
+.vid1{
+    display: block;
+}
+
+.controls{
+    position: absolute;
+    bottom:14%; left:50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dots {
+    height: 2rem;
+    width:2rem;
+    cursor: pointer;
+    background: #088f8f;
+    margin: 0 1rem;
+    align-items: center;
+}
+.dots:hover{
+    background: #fff;
+}
+
+
+#special {
+    background: #000;
+    min-height: 100vh;
+}
+
+
+#special .heading {
+    font-size: 4rem;
+    color: #000;
+    padding-top: 7rem;
+    margin-bottom: 2rem;
+}
+
+#special span {
+    color: #088f8f;
+}
+
+#special h1 {
+    color: #fff;
+}
+
+#special p{
+    color: #ccc;
+    font-size: 2rem;
+}
+
+
+.card-container{
+    width: 95%;
+    margin: 7rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    height: 40rem;
+    width: 30rem;
+    background: #fff;
+    padding: 1rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+#special img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#special p{
+    font-size: 1.4rem;
+    margin:2rem 0;
+}
+#special button{
+    height: 3.5rem; 
+    background: #333;
+    color: #fff;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    width: 14rem;
+}
+#special button:hover {
+   color:#333;
+   background-color: #088f8f;
+   
+
+}
+
+#special .card:hover{
+    transform: scale(.9);
+}
+/* about */
+#about img{
+    width: 40vh;
+}
+#about .heading {
+    font-size: 4rem;
+    color: #000;
+    padding-top: 7rem;
+    margin-bottom: 2rem;
+}
+#about span {
+    color: #088f8f;
+}
+#about .content {
+  margin:5rem auto;
+
+}
+/* #about p {
+    font-size: 2rem;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+
+} */
+#about button {
+    height: 3.5rem; 
+    background: #333;
+    color: #fff;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    width: 14rem;
+}
+
+#about button:hover{
+    background-color: #088f8f;
+}
+/* footer section */
+#footer{
+    background: #333;
+}
+
+#footer h1{
+    font-size: 2rem;
+    margin: 0;
+    padding: 2rem 0;
+    text-align: center;
+    color:#fff;
+}
+
+#footer span {
+    color: #088f8f;
+}
+
+#footer .brand{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#footer img {
+  height: 4rem;
+}
+
+.icons a {
+    font-size: 2rem;
+    margin:2rem 1rem;
+    color: #fff;
+}
+
+.icons a:hover{
+    color: #088f8f;
+}
+
+.footer-links{
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    margin: 1rem 0;
+}
+
+#footer h3{
+    font-size: 2.2rem;
+    color: #088f8f;
+}
+
+#footer a {
+    color: #fff;
+    font-size: 1.7rem;
+}
+p {
+    font-weight: bold;
+    font-size: 2rem;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
