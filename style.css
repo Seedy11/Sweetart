@@ -130,6 +130,8 @@ body{
 #home{
     background: linear-gradient(0deg, rgba(0,0,0,.6),rgba(0,0,0,.6));
     min-height: 100vh;
+    height: 35%;
+    text-align: center;
 }
 
 #home h1 {
@@ -151,6 +153,7 @@ body{
 #home p {
     font-size: 1.6rem;
     color: #ccc;
+    text-align: center;
 }
 
 
@@ -259,6 +262,7 @@ body{
 
 .card-container{
     width: 95%;
+   
     margin: 3rem auto;
     display: flex;
     align-items: center;
@@ -266,16 +270,17 @@ body{
     flex-wrap: wrap;
 }
 .card{
-    height: 40rem;
+     height: 40rem; 
     width: 30rem;
     background: black;
     padding: 1rem;
     margin: 2rem;
     text-align: center;
+    
 }
 
 #special img{
-    height: 50%;
+    height: 80%;
     width: 100%;
     object-fit: cover;
 }
@@ -355,6 +360,19 @@ body{
 #about button:hover{
     background-color: #088f8f;
 }
+
+
+.fa-wine-glass{
+    font-size: 4rem;
+    align-items: centers;
+    color:#088f8f;
+   
+} 
+  .fa-solid {
+    font-size: 4rem;
+    align-items: centers;
+    color:#088f8f;
+}
 /* footer section */
 #footer{
     background: #333;
@@ -408,7 +426,7 @@ body{
     font-size: 1.7rem;
 }
 p {
-    font-weight: bold;
+    font-weight:600;
     font-size: 2rem;
     font-style: italic;
     font-family: 'Courier New', Courier, monospace;
