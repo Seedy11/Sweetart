@@ -259,7 +259,7 @@ body{
 
 .card-container{
     width: 95%;
-    margin: 7rem auto;
+    margin: 3rem auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -268,7 +268,7 @@ body{
 .card{
     height: 40rem;
     width: 30rem;
-    background: #fff;
+    background: black;
     padding: 1rem;
     margin: 2rem;
     text-align: center;
