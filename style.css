@@ -101,7 +101,7 @@ body{
         top:0; left:-120%;
         height:100vh;
         width:35rem;
-        background-color: black;
+        background-color: pink;
     }
 
     ul{
@@ -127,11 +127,15 @@ body{
     }
 }
 
-#home{
-    background: linear-gradient(0deg, rgba(0,0,0,.6),rgba(0,0,0,.6));
-    min-height: 100vh;
-    height: 35%;
+ /*#home{
+     background: linear-gradient(0deg, rgba(0,0,0,.2),rgba(0,0,0,.2)); 
+    min-height: 50vh;
+    height: 15%;
     text-align: center;
+    color: #000;
+} 
+.intro {
+    color: #000;
 }
 
 #home h1 {
@@ -140,6 +144,7 @@ body{
    font-weight: bolder;
    text-shadow: .1rem .1rem .3rem #333;
    color: #088f8f;
+   
 }
 
 #home h2 {
@@ -152,7 +157,7 @@ body{
 }
 #home p {
     font-size: 1.6rem;
-    color: #ccc;
+    color: black;
     text-align: center;
 }
 
@@ -177,7 +182,7 @@ body{
 #home  button::before {
     content: '';
     position: absolute;
-    top:0; left:0;
+    top:60; left:0;
     background: #088f8f;
     height: 100%;
     width: 0%;
@@ -187,6 +192,15 @@ body{
 
 #home button:hover::before{
   width: 100%;
+} */
+#home p {
+    font-size: 1.6rem;
+    color: black;
+    text-align: center;
+}
+
+#home span {
+    background-color: #088f8f;
 }
 .image-container {
     position: absolute;
@@ -362,13 +376,13 @@ body{
 }
 
 
-.fa-wine-glass{
+ .fa-wine-glass{
     font-size: 4rem;
     align-items: centers;
     color:#088f8f;
    
 } 
-  .fa-solid {
+ .fa-solid {
     font-size: 4rem;
     align-items: centers;
     color:#088f8f;
@@ -426,10 +440,11 @@ body{
     font-size: 1.7rem;
 }
 p {
-    font-weight:600;
+    font-weight:400;
     font-size: 2rem;
     font-style: italic;
     font-family: 'Courier New', Courier, monospace;
+    color: #000;
 }
 
 
